@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhancement in HTML5 Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Enhancement in HTML5 Forms Assignment</h1>
+      <p>
+        This page demonstrates HTML5 semantic structure, media embedding,
+        tables, lists, and forms.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Popular Programming Languages</h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Go</li>
+          <li>Rust</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Steps to Learn Web Development</h2>
+        <ol>
+          <li>Learn HTML & CSS</li>
+          <li>Understand JavaScript</li>
+          <li>Get familiar with Git & GitHub</li>
+          <li>Explore Frontend Frameworks</li>
+          <li>Learn Backend Basics</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Comparison Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Type</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Python</td>
+              <td>High-level</td>
+              <td>Web, AI, Scripting</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Interpreted</td>
+              <td>Web Development</td>
+            </tr>
+            <tr>
+              <td>Rust</td>
+              <td>Compiled</td>
+              <td>Systems Programming</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Media Section</h2>
+        <article>
+          <h3>Sample Image</h3>
+          <img
+            src="https://www.w3schools.com/html/img_chania.jpg"
+            width="300"
+            height="200"
+          />
+
+          <h3>Sample Video</h3>
+          <video width="300" height="200" controls>
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </article>
+      </section>
+
+      <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="post" autocomplete="on">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Write your full name"
+            required
+          />
+
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+            autocomplete="email"
+          />
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="100"
+            required
+          />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="profile">Upload Profile Picture:</label>
+          <input type="file" id="profile" name="profile" accept="image/*" />
+
+          <label for="bio">Short Bio:</label>
+          <textarea
+            id="bio"
+            name="bio"
+            placeholder="Tell us about yourself..."
+            rows="4"
+          ></textarea>
+
+          <fieldset>
+            <legend>Gender:</legend>
+            <label
+              ><input type="radio" name="gender" value="male" required />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+            <label
+              ><input type="radio" name="gender" value="other" /> Other</label
+            >
+          </fieldset>
+
+          <label for="experience">Years of Experience (0–10):</label>
+          <input
+            type="range"
+            id="experience"
+            name="experience"
+            min="0"
+            max="10"
+          />
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Please choose--</option>
+            <option value="mzn">Mozambique</option>
+            <option value="ken">Kenya</option>
+            <option value="nig">Nigeria</option>
+          </select>
+
+          <br /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cleiton Langa. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
